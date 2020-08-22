@@ -1,0 +1,145 @@
+*  {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #1c1e21;
+    direction: ltr;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    unicode-bidi: embed;
+}
+
+.header {
+    width: 100%;
+    background-color: rgb(36,37,38);
+    height: 60px;
+
+}
+
+.box-1 {
+width: 100%;
+display: flex;
+align-items: center;
+margin: 2px 21px;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    width: 12%;
+    margin: 12px;
+}
+
+.logo-box img{
+    width: 100%;
+}
+
+.input-box input {
+    position: relative;
+    width: 131%;
+    background-color: #3a3b3c;
+    color: #ffffff;
+    border-radius: 25px;
+    height: 36px;
+    flex: 1;
+
+}
+
+.input-box > input::placeholder{
+    display: flex;
+   color: #fff;
+   text-align: center;
+}
+
+.material-icons {
+    position: absolute;
+    padding: 9px;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    z-index: 999;
+}
+
+.box-2 {
+    display: flex;
+    align-items: center;
+}
+
+.menu .material-icons {
+    font-size: 40px;
+}
+
+.menu .material-icons:hover {
+    color: #5555ff;
+}
+
+
+
+.menu ul {
+    text-decoration: none;
+    margin: -13px;
+}
+
+.menu ul li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 50px;
+}
+
+.active:active {
+    border-bottom: orangered 1px solid;
+}
+
+.box-3 {
+    position: relative;
+}
+
+.imageText-box {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    width: 100%;
+}
+
+.imageText-box > span {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    margin: 22px 0px;
+}
+
+.imageText-box > img {
+    width: 9%;
+    border-radius: 32px;
+    height: 32px;
+    margin: 18px 11px;
+}
+
+.icons-box-2{
+    display: flex;
+    /* left: 168px; */
+    justify-content: flex-end;
+    margin: 7px 55px;
+}
+
+.box-3 ul {
+    text-decoration: none;
+    margin: -13px;
+}
+
+.box-3 ul li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 16px;
+}
+
+.box-3 > .material-icons {
+    background-color: #3a3b3c;
+    border-radius: 25px;
+}

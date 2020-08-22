@@ -1,0 +1,31 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v1.4.2
+      with:
+         version: 12
+    - name: GitHub Action for Yarn
+      uses: Borales/actions-yarn@v2.3.0
+      with:
+        # Yarn command
+        cmd: install # npm / yarn installing
+        
+    - name: creating build
+      run: yarn build
+    
+    - name: installing surge
+      run: npm install -g surge
+      
+    - name: Deploy to Surge
+      run:  surge ./build http://shari-cloner.surge.sh/ --token ${{secrets.FACEBOOK_CLONE}}
