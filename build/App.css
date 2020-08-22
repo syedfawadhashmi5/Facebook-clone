@@ -120,23 +120,21 @@ margin: 2px 21px;
     height: 32px;
     margin: 18px 11px;
 }
-
-.icons-box-2{
+.icons-box-2 {
     display: flex;
     /* left: 168px; */
     justify-content: flex-end;
-    margin: 7px 55px;
+    /* margin: 7px 9px; */
 }
-
 .box-3 ul {
     text-decoration: none;
-    margin: -13px;
+    margin: -6px 24px;
 }
 
 .box-3 ul li {
     display: inline-block;
     text-decoration: none;
-    margin: 0px 16px;
+    margin: 0px 27px;
 }
 
 .box-3 > .material-icons {
