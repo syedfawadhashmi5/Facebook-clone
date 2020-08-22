@@ -115,7 +115,8 @@ margin: 2px 21px;
 }
 
 .imageText-box > img {
-    width: 9%;
+    width: 8%;
+    height: 9%;
     border-radius: 32px;
     height: 32px;
     margin: 18px 11px;
