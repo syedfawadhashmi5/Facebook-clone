@@ -95,3 +95,51 @@ margin: 2px 21px;
 .active:active {
     border-bottom: orangered 1px solid;
 }
+
+.box-3 {
+    position: relative;
+}
+
+.imageText-box {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    width: 100%;
+}
+
+.imageText-box > span {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    margin: 22px 0px;
+}
+
+.imageText-box > img {
+    width: 9%;
+    border-radius: 32px;
+    height: 32px;
+    margin: 18px 11px;
+}
+
+.icons-box-2{
+    display: flex;
+    /* left: 168px; */
+    justify-content: flex-end;
+    margin: 7px 55px;
+}
+
+.box-3 ul {
+    text-decoration: none;
+    margin: -13px;
+}
+
+.box-3 ul li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 16px;
+}
+
+.box-3 > .material-icons {
+    background-color: #3a3b3c;
+    border-radius: 25px;
+}
