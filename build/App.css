@@ -22,11 +22,19 @@ body {
 
 }
 
+.section-1 {
+    width: auto;
+    overflow: hidden;
+}
+
 .box-1 {
-width: 100%;
-display: flex;
-align-items: center;
-margin: 2px 21px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* margin: 2px 21px; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .logo-box {
@@ -83,7 +91,9 @@ margin: 2px 21px;
 
 .menu ul {
     text-decoration: none;
-    margin: -13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu ul li {
@@ -140,4 +150,39 @@ margin: 2px 21px;
 .box-3 > .material-icons {
     background-color: #3a3b3c;
     border-radius: 25px;
+}
+
+/* section for contain  */
+
+
+.section-main__contain {
+    overflow: hidden;
+    width: 100%;
+}
+
+.contain__box-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contain__box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.contain__box-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
 }
