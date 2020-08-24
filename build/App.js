@@ -1,10 +1,8 @@
 
-// this script create onmouse over to detaile about user but work in progree
+function icon__hide(){
+document.getElementById("hide_icon").innerHTML = "";
+document.getElementById("remove__img").style.display='none';
+var icon__element = document.getElementById("add__icon");
+icon__element.classList.remove("hide");
 
-document.querySelectorAll('.left-status-content').forEach(a =>{
-   a.setAttribute('onmouseover','display()')
-});
-
-function display(){
-    alert('hi')
-};
+}
