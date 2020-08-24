@@ -29,13 +29,14 @@
                     <div class="col-md-3">
                         <div class="box-1">
                             <div class="logo-box">
-                                <img src="./images/f_logo_RGB-Hex-Blue_512.png" alt="">
+                                <img src="./images/f_logo_RGB-Hex-Blue_512.png" id="remove__img" alt="">
+                                <i class="fas fa-long-arrow-alt-left modified hide" id="add__icon" ></i>
                             </div>
                             <div class="input-box">
-                                <span class="material-icons">
+                                <span class="material-icons"  id="hide_icon">
                                     search
                                 </span>
-                                <input type="text" search placeholder="Search Facebook">
+                                <input type="text" onclick="icon__hide()" search placeholder="Search Facebook">
                             </div>
                         </div>
                     </div>
@@ -43,10 +44,10 @@
                         <div class="box-2">
                             <div class="menu">
                                 <ul>
-                                    <li class="active">
-                                        <a href="">
+                                    <li>
+                                        <a class="active" href="">
                                             <span class="material-icons">
-                                                supervisor_account
+                                                home
                                             </span>
                                         </a>
                                     </li>
@@ -67,7 +68,7 @@
                                     <li>
                                         <a href="">
                                             <span class="material-icons">
-                                                people_alt
+                                                supervised_user_circle
                                             </span>
                                         </a>
                                     </li>
@@ -143,6 +144,9 @@
             </div>
         </div>
     </div>
-</body>
 
+
+
+    <script src="./App.js"></script>
+</body>
 </html>

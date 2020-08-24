@@ -17,7 +17,7 @@ body {
 
 .header {
     width: 100%;
-    background-color: rgb(36,37,38);
+    background-color: #242526;
     height: 60px;
 
 }
@@ -39,22 +39,47 @@ body {
 
 .logo-box {
     display: flex;
+    justify-content: end;
     align-items: center;
+    position: relative;
     width: 12%;
-    margin: 12px;
+}
+
+.logo-box > .modified {
+    position: absolute;
+    color: #ffffff;
+    /* height: 8px; */
+    /* width: 14px; */
+    left: 4px;
+    font-size: 27px;
+    transition: all 5s ease;
 }
 
 .logo-box img{
     width: 100%;
 }
+.show:focus {
+    visibility: visible;
+    }
+.input-box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    margin: 12px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
 
 .input-box input {
     position: relative;
-    width: 131%;
-    background-color: #3a3b3c;
+    width: 100%;
+    background-color: #494949;
     color: #ffffff;
     border-radius: 25px;
-    height: 36px;
+    padding: 5px;
     flex: 1;
 
 }
@@ -102,8 +127,9 @@ body {
     margin: 0px 50px;
 }
 
-.active:active {
+a.active:active {
     border-bottom: orangered 1px solid;
+    color: #5555ff;
 }
 
 .box-3 {
@@ -126,9 +152,7 @@ body {
 
 .imageText-box > img {
     width: 8%;
-    height: 9%;
-    border-radius: 32px;
-    height: 32px;
+    border-radius: 50%;
     margin: 18px 11px;
 }
 .icons-box-2 {
@@ -187,3 +211,8 @@ body {
 
 
 }
+
+.hide {
+visibility: hidden;
+}
+
