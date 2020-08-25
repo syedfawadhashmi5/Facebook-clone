@@ -74,7 +74,7 @@ transition: all .4s;
     color: rgb(134, 134, 134);
 }
 .login > .content1 >  .recent-login > .add-content2{
-    height: 70%;
+    max-height: 70%;
     width: 40%;
     background: #fff;
     border-radius: 2%;

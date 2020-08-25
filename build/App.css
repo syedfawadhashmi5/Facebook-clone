@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     unicode-bidi: embed;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -74,12 +75,14 @@ textarea:focus, input:focus{
 }
 
 .input-box input {
+    transition: all .4s;
     position: relative;
     width: 100%;
     background-color: #494949;
     color: #ffffff;
     border-radius: 25px;
     padding: 5px;
+    border: none;
     flex: 1;
 
 }
@@ -106,10 +109,14 @@ textarea:focus, input:focus{
 
 .menu .material-icons {
     font-size: 40px;
+    transition: all .4s;
 }
 
 .menu .material-icons:hover {
-    color: #5555ff;
+     background: rgba(116, 116, 116, 0.479);
+     width: 15%;
+     transition: all .4s;
+
 }
 
 
@@ -127,9 +134,11 @@ textarea:focus, input:focus{
     margin: 0px 50px;
 }
 
-a.active:active {
+a .active {
     border-bottom: orangered 1px solid;
     color: #5555ff;
+    transition: all .4s;
+    width: 15%;
 }
 
 .box-3 {
@@ -182,12 +191,15 @@ a.active:active {
 
 .section-main__contain {
     overflow: hidden;
+    display: block;
     width: 100%;
+    background:  #3a3b3c;
 }
+
 
 .contain__box-1 {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; //// do not use this. all content in content section verticaly in center on this use */
     align-items: center;
     flex-direction: column;
 
@@ -195,7 +207,7 @@ a.active:active {
 
 .contain__box-2 {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; //// do not use this. all content in content section verticaly in center on this use */
     align-items: center;
     flex-direction: column;
 
@@ -208,11 +220,94 @@ a.active:active {
     align-items: center;
     flex-direction: column;
 
-
-
 }
 
 .hide {
 visibility: hidden;
 }
+
+
+/* user left status content css start */
+
+.left{
+    background: #1c1e21;
+    height: 90vh;
+    width: 100%;
+    padding: 20PX;
+    display: block;
+    position: relative;
+}
+
+.heading-status{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    color: rgb(196, 196, 196);
+}
+.heading-status > .contact{
+    font-weight: 700;
+    font-size: 18px;
+}
+.heading-status > .icons{
+    font-size: 15px;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.left-status-content{
+    display: flex;
+    color: rgb(196, 196, 196);
+    width: 100%;
+    height: 5%;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 0px;
+}
+.left-status-content > .img-status{
+    height: 100;
+    width: 10%;
+    border-radius: 50%;
+}
+.left-status-content > .img-status > img{
+    height: 100;
+    width: 100%;
+    border-radius: 50%;
+}
+.left-status-content > .user-name-status{
+   font-weight: 500;
+   text-transform: capitalize;
+   margin-left: 10px;
+}
+
+
+.hover-display{
+    position: absolute;
+    display: none;
+    top: 20%;
+    left: -125%;
+    height: 200px;
+    width: 400px;
+    background:rgb(44, 44, 44);
+    animation: anim  .6s;
+    color: #fff;
+    font-size: 10px;
+    box-shadow: 0 10px  5px rgb(46, 46, 46);
+}
+@keyframes anim{
+    from{
+        left: -90%;
+        width: 300px;
+        height: 150px;
+    }to{
+        left: -125%;
+        width: 400px;
+        height: 200px;
+    }
+}
+
+
+/* user left status content css end */
 
