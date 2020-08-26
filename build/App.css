@@ -55,7 +55,10 @@ body {
     font-size: 27px;
     transition: all 5s ease;
 }
-
+.active {
+    background-color: blue;
+    border: 2px blue;
+}
 .logo-box img{
     width: 100%;
 }
@@ -134,12 +137,7 @@ textarea:focus, input:focus{
     margin: 0px 50px;
 }
 
-a .active {
-    border-bottom: orangered 1px solid;
-    color: #5555ff;
-    transition: all .4s;
-    width: 15%;
-}
+
 
 .box-3 {
     position: relative;
@@ -227,11 +225,121 @@ visibility: hidden;
 }
 
 
+/* user right status content css start */
+
+.right{
+    /* display: flex;
+    justify-content: end; */
+    background: #1c1e21;
+    height: 100%;
+    width: 100%;
+    padding: 20PX;
+    position: relative;
+}
+
+/* this is image and text section */
+
+.img__box {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+}
+
+.img__box img{
+    width: 18%;
+    border-radius: 100%;
+}
+
+
+.text__box {
+    color: #ffffff;
+    margin: 0 12px;
+}
+
+/* this is logo and text section */
+
+.icons__box {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+}
+
+.icons__box img{
+    width: 18%;
+    border-radius: 100%;
+}
+
+.icons__box > .clor {
+    color: #ffffff;
+    font-size: 33px;
+    margin: 9px;
+    pointer-events: visible;
+}
+
+
+
+.icons__text {
+    color: #ffffff;
+    margin: 0 12px;
+    font-size: .9375rem;
+}
+
+.hr__line {
+    background: #ffffff;
+}
+
+/* right side section two */
+
+.info__box {
+    width: 100%;
+    /* justify-content: space-evenly; */
+    padding: 10px;
+}
+
+.info__main__text {
+    color: #848484;
+    font-size: 17px;
+    font-weight: 800;
+    margin-bottom: 15px;
+
+}
+
+.info__img  {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 10px;
+}
+
+.info__img img {
+    width: 18%;
+    border-radius: 25%;
+    height: 37px;
+}
+
+.info__text {
+    color: #ffffff;
+    margin: 0 12px;
+    font-size: .9375rem;
+}
+
+.bottom {
+    color: #ffffff;
+    font-size: small;
+}
+
 /* user left status content css start */
 
 .left{
     background: #1c1e21;
-    height: 90vh;
+    height: 100%;
     width: 100%;
     padding: 20PX;
     display: block;

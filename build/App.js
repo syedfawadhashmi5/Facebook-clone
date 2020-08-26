@@ -53,3 +53,12 @@ let hoverDisplay = document.getElementsByClassName('hover-display')[0]
             hoverDisplay.style.display="none";
         },300);
     };
+
+
+
+    // right side script
+
+
+function expand() {
+    document.getElementById("expend_manu").classList.remove("hide")
+}
