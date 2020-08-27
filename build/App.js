@@ -22,39 +22,32 @@ icon__element.addEventListener('click',()=>{
 
          // active class script done !!!!
 
+var home = document.getElementById('home');
+var video =  document.getElementById('videos');
 let commonClassAlln = document.querySelectorAll('.commom-cLass')
     commonClassAlln.forEach(elem => {
         elem.addEventListener('click',()=>{
             document.querySelector('.active').classList.remove('active')
             elem.classList.add('active')
+
+            //manu display condition
+            if(elem.classList[2] === 'videos'){
+
+                home.style.display = 'none'
+
+              video.style.display = 'block'
+
+            }else if(elem.classList[2] === 'home'){
+
+                video.style.display = 'none'
+
+                home.style.display = 'block'
+             
+            };
         });
+        
     });
         
-
-
-let leftSide = document.querySelectorAll('.left-status-content')
-        leftSide.forEach(a =>{
-            a.setAttribute('onmouseover','display(this)')
-            a.setAttribute('onmouseout','displayNone()')
-        });
-      
-       
-let hoverDisplay = document.getElementsByClassName('hover-display')[0]
-    function display(e){
-        setTimeout(()=>{
-            hoverDisplay.style.display="block";
-            let userDetaile = document.getElementById('user-detaile')
-            userDetaile.innerHTML = e.children[1].innerText
-        },300);
-    };
-
-    function displayNone(){
-        setTimeout(()=>{
-            hoverDisplay.style.display="none";
-        },300);
-    };
-
-
 
     // right side script
 
@@ -66,3 +59,16 @@ function expand() {
         document.getElementsByClassName('toggle-title')[0].innerHTML = 'See Less';
     }else{document.getElementsByClassName('toggle-title')[0].innerHTML = 'See More';}
 }
+
+
+
+
+
+
+// window.addEventListener('hashchange', ()=>{
+//     let currenLocation = window.location.hash
+//     // window.location = window.location.hash
+//     console.log(window.location.hash)
+
+
+// })

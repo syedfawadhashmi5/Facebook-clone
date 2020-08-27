@@ -20,12 +20,12 @@ body {
     width: 100%;
     background-color: #242526;
     height: 60px;
-
+    position: fixed;
+    z-index: 555;
 }
 
 .section-1 {
     width: auto;
-    overflow: hidden;
 }
 
 .box-1 {
@@ -111,14 +111,15 @@ textarea:focus, input:focus{
 }
 
 .menu .material-icons {
-    font-size: 40px;
-    transition: all .4s;
+    font-size: 30px;
+    transition: all .2s;
 }
 
 .menu .material-icons:hover {
      background: rgba(116, 116, 116, 0.479);
      width: 15%;
-     transition: all .4s;
+     transition: all .2s;
+     color: blue;
 
 }
 
@@ -139,51 +140,78 @@ textarea:focus, input:focus{
 
 
 
-.box-3 {
+/* .box-3 {
     position: relative;
-}
-
-.imageText-box {
     display: flex;
-    justify-content: end;
-    position: absolute;
-    width: 100%;
-}
+    justify-content: space-around;
+    height: 30%;
 
-.imageText-box > span {
+} */
+
+/* .imageText-box {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    align-items: center;
+
+
+} */
+
+/* .imageText-box > span {
     display: flex;
     justify-content: center;
     color: #ffffff;
     margin: 22px 0px;
-}
+} */
 
-.imageText-box > img {
-    width: 8%;
+/* .imageText-box > img {
+    width: 40%;
+    height: 40%;
     border-radius: 50%;
     margin: 18px 11px;
-}
-.icons-box-2 {
+} */
+/* .icons-box-2 {
     display: flex;
-    /* left: 168px; */
+    left: 168px;
     justify-content: flex-end;
-    /* margin: 7px 9px; */
-}
-.box-3 ul {
+    margin: 7px 9px;
+} */
+/* .box-3 ul {
     text-decoration: none;
     margin: -6px 24px;
-}
+} */
 
-.box-3 ul li {
+/* .box-3 ul li {
     display: inline-block;
     text-decoration: none;
     margin: 0px 27px;
-}
+} */
 
-.box-3 > .material-icons {
+/* .box-3 > .material-icons {
     background-color: #3a3b3c;
     border-radius: 25px;
+} */
+.box-3{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 20% ;
 }
+.icons-box-2{
+    height: 100%;
+    margin-top: 5px;
+   align-items: center;
+} 
+.icons-box-2 > a{
+    text-decoration:none ;
+    color: #fefefe;
+    font-size: 20px;
+} 
+.imageText-box > img{
+    max-width: 20%; 
+    border-radius: 50%;
 
+}
 /* section for contain  */
 
 
@@ -192,6 +220,9 @@ textarea:focus, input:focus{
     display: block;
     width: 100%;
     background:  #3a3b3c;
+    position: absolute;
+    top: 9%;
+
 }
 
 
@@ -233,10 +264,9 @@ transition: all ease-in-out .8s;
     /* display: flex;
     justify-content: end; */
     background: #1c1e21;
-    height: 100%;
+    height: auto;
     width: 100%;
     padding: 20PX;
-    position: relative;
     margin-right: 15px;
 }
 
@@ -352,7 +382,6 @@ transition: all ease-in-out .8s;
     width: 100%;
     padding: 20PX;
     display: block;
-    position: relative;
 }
 
 .heading-status{
@@ -379,13 +408,19 @@ transition: all ease-in-out .8s;
     color: rgb(196, 196, 196);
     width: 100%;
     height: 5%;
-    margin-top: 10px;
+    padding: 5px 10px;
     cursor: pointer;
-    padding: 0px;
+    align-items: center;
+    transition: all .4s;
+
+}
+.left-status-content:hover{
+    background: rgb(82, 81, 81);
+    border-radius: 10px;
 }
 .left-status-content > .img-status{
     height: 100;
-    width: 10%;
+    width: 12%;
     border-radius: 50%;
 }
 .left-status-content > .img-status > img{
@@ -394,37 +429,20 @@ transition: all ease-in-out .8s;
     border-radius: 50%;
 }
 .left-status-content > .user-name-status{
+    height: 100%;
    font-weight: 500;
    text-transform: capitalize;
    margin-left: 10px;
 }
 
 
-.hover-display{
-    position: absolute;
-    display: none;
-    top: 20%;
-    left: -125%;
-    height: 200px;
-    width: 400px;
-    background:rgb(44, 44, 44);
-    animation: anim  .6s;
-    color: #fff;
-    font-size: 10px;
-    box-shadow: 0 10px  5px rgb(46, 46, 46);
-}
-@keyframes anim{
-    from{
-        left: -90%;
-        width: 300px;
-        height: 150px;
-    }to{
-        left: -125%;
-        width: 400px;
-        height: 200px;
-    }
-}
-
 
 /* user left status content css end */
 
+/* video window styling */
+#videos{
+    position: absolute;
+    top: 9%;
+    display: none;
+    
+}
