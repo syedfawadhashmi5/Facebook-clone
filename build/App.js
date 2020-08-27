@@ -60,5 +60,9 @@ let hoverDisplay = document.getElementsByClassName('hover-display')[0]
 
 
 function expand() {
-    document.getElementById("expend_manu").classList.remove("hide")
+    document.getElementById("expend_manu").classList.toggle("hide")
+   var toggle = document.getElementsByClassName('fa-angle-down')[0].classList.toggle('fa-angle-up')
+    if(toggle){
+        document.getElementsByClassName('toggle-title')[0].innerHTML = 'See Less';
+    }else{document.getElementsByClassName('toggle-title')[0].innerHTML = 'See More';}
 }

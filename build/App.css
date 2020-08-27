@@ -214,14 +214,16 @@ textarea:focus, input:focus{
 
 .contain__box-3 {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 
 }
 
 .hide {
-visibility: hidden;
+display: none;
+transition: all ease-in-out .8s;
+
 }
 
 
@@ -235,6 +237,7 @@ visibility: hidden;
     width: 100%;
     padding: 20PX;
     position: relative;
+    margin-right: 15px;
 }
 
 /* this is image and text section */
@@ -249,7 +252,7 @@ visibility: hidden;
 }
 
 .img__box img{
-    width: 18%;
+    width: 15%;
     border-radius: 100%;
 }
 
@@ -264,22 +267,28 @@ visibility: hidden;
 .icons__box {
     width: 100%;
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: flex-start;
     justify-content: end;
     align-items: center;
     padding: 10px;
+    cursor: pointer;
+}
+.icons__box:hover{
+    background: rgb(63, 63, 63);
+    border-radius: 10px;
 }
 
 .icons__box img{
-    width: 18%;
+    width: 12%;
     border-radius: 100%;
 }
 
 .icons__box > .clor {
     color: #ffffff;
     font-size: 33px;
-    margin: 9px;
+    /* margin: 9px; */
     pointer-events: visible;
+    transition: all ease-in-out .8s;
 }
 
 
@@ -339,7 +348,7 @@ visibility: hidden;
 
 .left{
     background: #1c1e21;
-    height: 100%;
+    height:500px;
     width: 100%;
     padding: 20PX;
     display: block;
