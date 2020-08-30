@@ -38,6 +38,7 @@ body {
     align-items: center;
 }
 
+/* this is a logo box section */
 .logo-box {
     display: flex;
     justify-content: end;
@@ -55,9 +56,11 @@ body {
     font-size: 27px;
     transition: all 5s ease;
 }
+
+/* this is a active class on header icons section */
 .active {
-    background-color: blue;
-    border: 2px blue;
+    color: #385898 !important;
+    border-bottom: 2px solid  #385898;
 }
 .logo-box img{
     width: 100%;
@@ -99,8 +102,9 @@ textarea:focus, input:focus{
 .material-icons {
     position: absolute;
     padding: 9px;
-    color: white;
+    color: #b0b3b8;
     min-width: 50px;
+    width: 15%;
     text-align: center;
     z-index: 999;
 }
@@ -117,10 +121,9 @@ textarea:focus, input:focus{
 
 .menu .material-icons:hover {
      background: rgba(116, 116, 116, 0.479);
+     border-radius: 10%;
      width: 15%;
      transition: all .2s;
-     color: blue;
-
 }
 
 
@@ -135,7 +138,7 @@ textarea:focus, input:focus{
 .menu ul li {
     display: inline-block;
     text-decoration: none;
-    margin: 0px 50px;
+    margin: 10px 50px;
 }
 
 
@@ -212,17 +215,17 @@ textarea:focus, input:focus{
     border-radius: 50%;
 
 }
+
 /* section for contain  */
 
 
 .section-main__contain {
     overflow: hidden;
+    position: fixed;
     display: block;
     width: 100%;
     background:  #3a3b3c;
-    position: absolute;
-    top: 9%;
-
+    padding: 50px 0px;
 }
 
 
@@ -264,7 +267,7 @@ transition: all ease-in-out .8s;
     /* display: flex;
     justify-content: end; */
     background: #1c1e21;
-    height: auto;
+    height: 100vh;
     width: 100%;
     padding: 20PX;
     margin-right: 15px;
